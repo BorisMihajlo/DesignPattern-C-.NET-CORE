@@ -1,0 +1,11 @@
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\obj\Debug\netcoreapp3.1\MediatorDesignPattern.csprojAssemblyReference.cache
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\obj\Debug\netcoreapp3.1\MediatorDesignPattern.AssemblyInfoInputs.cache
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\obj\Debug\netcoreapp3.1\MediatorDesignPattern.AssemblyInfo.cs
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\bin\Debug\netcoreapp3.1\MediatorDesignPattern.exe
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\bin\Debug\netcoreapp3.1\MediatorDesignPattern.deps.json
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\bin\Debug\netcoreapp3.1\MediatorDesignPattern.runtimeconfig.json
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\bin\Debug\netcoreapp3.1\MediatorDesignPattern.runtimeconfig.dev.json
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\bin\Debug\netcoreapp3.1\MediatorDesignPattern.dll
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\bin\Debug\netcoreapp3.1\MediatorDesignPattern.pdb
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\obj\Debug\netcoreapp3.1\MediatorDesignPattern.dll
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\MediatorDesignPattern\obj\Debug\netcoreapp3.1\MediatorDesignPattern.pdb

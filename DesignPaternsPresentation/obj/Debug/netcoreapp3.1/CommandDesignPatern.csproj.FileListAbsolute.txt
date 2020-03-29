@@ -1,0 +1,11 @@
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\bin\Debug\netcoreapp3.1\CommandDesignPatern.exe
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\bin\Debug\netcoreapp3.1\CommandDesignPatern.deps.json
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\bin\Debug\netcoreapp3.1\CommandDesignPatern.runtimeconfig.json
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\bin\Debug\netcoreapp3.1\CommandDesignPatern.runtimeconfig.dev.json
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\bin\Debug\netcoreapp3.1\CommandDesignPatern.dll
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\bin\Debug\netcoreapp3.1\CommandDesignPatern.pdb
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\obj\Debug\netcoreapp3.1\CommandDesignPatern.csprojAssemblyReference.cache
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\obj\Debug\netcoreapp3.1\CommandDesignPatern.AssemblyInfoInputs.cache
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\obj\Debug\netcoreapp3.1\CommandDesignPatern.AssemblyInfo.cs
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\obj\Debug\netcoreapp3.1\CommandDesignPatern.dll
+C:\Users\bomi2006\source\repos\DesignPaternsPresentation\DesignPaternsPresentation\obj\Debug\netcoreapp3.1\CommandDesignPatern.pdb
