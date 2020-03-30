@@ -8,7 +8,6 @@ namespace CommandDesignPatern.Commands
     public class AirConditionerOnCommand : ICommand
     {
         public List<IReceiver> acr;
-
         public AirConditionerOnCommand( List<IReceiver> _acr)
         {
             this.acr = _acr;
@@ -21,10 +20,6 @@ namespace CommandDesignPatern.Commands
             }
         }
 
-        public void undo()
-        {
-       
-        }
-         
+        public void undo(){}
     }
 }

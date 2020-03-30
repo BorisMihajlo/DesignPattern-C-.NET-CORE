@@ -24,25 +24,21 @@ namespace MediatorDesignPattern.Components
         }
         public float GetFlightAltitude()
         {
-            return flight_altitude;
+             return flight_altitude;
         }
        
         public void TakeOff()
         {
             if (ctm.Getrack() == true)
             {
-               
                 ctm.TakeOff(this.id);
-                
                 flight_altitude = 4000;
                 ctm.ClearTrack();
-                
-                
+         
             }
             else
                 ctm.SendMessage();
-            flight_altitude = flight_altitude;
-
+                flight_altitude = flight_altitude;
 
         }
 
@@ -51,7 +47,6 @@ namespace MediatorDesignPattern.Components
             if (ctm.Getrack() == true)
             {
                 ctm.Land(id);
-
                 flight_altitude = 0;
             }
             else

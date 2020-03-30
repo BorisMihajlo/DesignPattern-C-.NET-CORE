@@ -11,8 +11,6 @@ namespace CommandDesignPatern.Receivers
         public static int airFlowPosition = 2;
         public bool executed;
 
-
-
         public AirConditionerReceiverPhilips() { }
         public bool IncreaseTemperatureBool()
         {
@@ -64,21 +62,15 @@ namespace CommandDesignPatern.Receivers
                 airFlowPosition--;
                 return true;
             }
-           else return false;
-
-            
-
+            else return false;
         }
 
         public void SetDownAirFlowPosition()
         {
             if (OnOff == true && airFlowPosition > 0 && airFlowPosition <= 4)
             {
-                airFlowPosition--;
-               
+                airFlowPosition--;   
             }
-           
-
         }
 
         public void SetUpAirFlowPosition()
@@ -86,10 +78,7 @@ namespace CommandDesignPatern.Receivers
             if (OnOff == true && airFlowPosition >= 0 && airFlowPosition < 4)
             {
                 airFlowPosition++;
-
             }
-
-
         }
 
         public void TurnOnOff()
@@ -98,7 +87,6 @@ namespace CommandDesignPatern.Receivers
             {
                 OnOff = true;
             }
-
             else if (OnOff == true)
             {
                 OnOff = false;

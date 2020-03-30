@@ -12,7 +12,6 @@ namespace CommandDesignPatern.Invokers
         ICommand TempDown;
         ICommand PositionUp;
         ICommand PositionDown;
-        
         public Remoter(ICommand OnOff, ICommand TempUp, ICommand TempDown, ICommand PositionUp, ICommand PositionDown)
         {
             this.OnOff = OnOff;
@@ -20,7 +19,6 @@ namespace CommandDesignPatern.Invokers
             this.TempDown = TempDown;
             this.PositionDown = PositionDown;
             this.PositionUp = PositionUp;
-  
         }
         public void ClickOnOffButton()
         {
@@ -46,7 +44,5 @@ namespace CommandDesignPatern.Invokers
         {
             this.PositionDown.execute();
         }
-      
     }
-
 }

@@ -7,8 +7,7 @@ using System.Text;
 namespace MediatorDesignPattern.Mediator
 {
     public interface IMediator
-    {
-        public void TakeOff(int i);
+    {   public void TakeOff(int i);
         public void Land(int i);
     }
 }

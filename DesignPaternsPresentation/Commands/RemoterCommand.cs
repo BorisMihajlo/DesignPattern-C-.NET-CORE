@@ -11,7 +11,6 @@ namespace CommandDesignPatern.Invokers
         private List<IReceiver> _receivers;
         private Action _action;
         public enum Action { TempUp,TempDown, PositionDown, PositionUp};
-
         public bool IsSuccess;
 
         public void SuccessfullOperation()
@@ -40,15 +39,11 @@ namespace CommandDesignPatern.Invokers
 
                     case Action.PositionUp:
                        IsSuccess= acr.SetUpAirFlowPositionBool();
-                       
                         break;
 
                     case Action.PositionDown:
                        IsSuccess= acr.SetDownAirFlowPositionBool();
-                       
                         break;
-
-
                 }
             }
         }
@@ -78,9 +73,6 @@ namespace CommandDesignPatern.Invokers
                         if (IsSuccess==true)
                         acr.SetDownAirFlowPosition();
                         break;
-
-
-
                 }
             }
         }

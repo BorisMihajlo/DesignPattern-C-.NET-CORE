@@ -8,7 +8,6 @@ namespace CommandDesignPatern.Commands
     class AirConditionerTempUpCommand : ICommand
     {
         public List<IReceiver> acr;
-
         public AirConditionerTempUpCommand(List<IReceiver> _acr)
         {
             this.acr = _acr;

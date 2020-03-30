@@ -49,48 +49,6 @@ namespace DesignPaternsPresentation
             foreach (var a in receivers)
                 a.PrintAllParametars();
 
-
-
-
-
-            //  Commands for Remoter
-
-            // AirConditionerOnCommand onoff = new AirConditionerOnCommand(receivers);
-            // AirConditionerPositionDownCommand airdown = new AirConditionerPositionDownCommand(receivers);
-            //AirConditionerPositionUpCommand airup = new AirConditionerPositionUpCommand(receivers);
-            //AirConditionerTempDownCommand tempdown = new AirConditionerTempDownCommand(receivers);
-            //AirConditionerTempUpCommand tempup = new AirConditionerTempUpCommand(receivers);
-
-
-            //Remoter r1 = new Remoter(onoff, tempup, tempdown, airup, airdown);
-
-
-
-
-            //r1.ClickPositionDown();
-            //r1.ClickTempUp();
-
-
-
-            //foreach (var a in receivers)
-            //    a.PrintAllParametars();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }

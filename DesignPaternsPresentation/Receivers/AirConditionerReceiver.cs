@@ -9,7 +9,6 @@ namespace CommandDesignPatern.Receivers
         public static bool OnOff=true; 
         public static int temperature=20;
         public static int airFlowPosition=2;
-
         public AirConditionerReceiver() {  }
 
         public bool IncreaseTemperatureBool()
@@ -63,9 +62,6 @@ namespace CommandDesignPatern.Receivers
                 return true;
             }
             else return false;
-
-
-
         }
 
         public void SetDownAirFlowPosition()
@@ -73,10 +69,7 @@ namespace CommandDesignPatern.Receivers
             if (OnOff == true && airFlowPosition > 0 && airFlowPosition <= 4)
             {
                 airFlowPosition--;
-
             }
-
-
         }
 
         public void SetUpAirFlowPosition()
@@ -84,26 +77,21 @@ namespace CommandDesignPatern.Receivers
             if (OnOff == true && airFlowPosition >= 0 && airFlowPosition < 4)
             {
                 airFlowPosition++;
-
             }
-
-
         }
 
-    
-
-    public void TurnOnOff()
+        public void TurnOnOff()
         {
             if (OnOff == false)
             {
                 OnOff = true;
-            }
-            
+            }   
            else if (OnOff == true)
             {
                 OnOff = false;
             }
         }
+
         public void PrintAllParametars()
         {
             if (OnOff == true)

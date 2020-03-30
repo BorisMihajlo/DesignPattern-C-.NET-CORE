@@ -7,7 +7,6 @@ namespace MediatorDesignPattern.Components
    public interface IColleague
     {
         public int GetId();
-       
         public void TakeOff();
         public void Land();
     }

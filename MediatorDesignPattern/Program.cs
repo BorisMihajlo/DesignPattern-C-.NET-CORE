@@ -49,8 +49,6 @@ namespace MediatorDesignPattern
             Console.WriteLine(hc.GetFlightAltitude());
             Console.WriteLine(ctm.Getrack());
 
-
-
         }
     }
 }

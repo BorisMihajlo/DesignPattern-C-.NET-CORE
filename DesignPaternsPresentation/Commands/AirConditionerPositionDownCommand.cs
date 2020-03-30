@@ -8,7 +8,6 @@ namespace CommandDesignPatern.Commands
     class AirConditionerPositionDownCommand :ICommand
     {
         public List<IReceiver> acr;
-
         public AirConditionerPositionDownCommand(List<IReceiver> _acr)
         {
             this.acr = _acr;

@@ -34,27 +34,21 @@ namespace MediatorDesignPattern.ConcreteMediator
         {
             foreach (var a in colleague)
             { 
-                
+
                 if (a.GetId() == jmbg)
                 {
                     Ontrack();
-                   
                 }
-           
             }
-            
         }
         public void Land(int jmbg)
         {
             foreach (var a in colleague)
             {
-
                 if (a.GetId() == jmbg)
                 {
                     Ontrack();
-
                 }
-
             }
         }
         public void SendMessage()
