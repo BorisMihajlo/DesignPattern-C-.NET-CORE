@@ -30,7 +30,7 @@ namespace MediatorDesignPattern.ConcreteMediator
             
         }
 
-        public void FlightOff(int jmbg)
+        public void TakeOff(int jmbg)
         {
             foreach (var a in colleague)
             { 
@@ -44,7 +44,7 @@ namespace MediatorDesignPattern.ConcreteMediator
             }
             
         }
-        public void Ground(int jmbg)
+        public void Land(int jmbg)
         {
             foreach (var a in colleague)
             {

@@ -6,38 +6,93 @@ namespace CommandDesignPatern.Receivers
 {
     public class AirConditionerReceiver : IReceiver
     {
-        public static bool OnOff; 
-        public static int temperature=29;
+        public static bool OnOff=true; 
+        public static int temperature=20;
         public static int airFlowPosition=2;
 
         public AirConditionerReceiver() {  }
 
+        public bool IncreaseTemperatureBool()
+        {
+            if (OnOff == true && temperature < 31)
+            {
+                temperature++;
+                return true;
+            }
+            else return false;
+        }
+
+        public bool DecreaseTemperatureBool()
+        {
+            if (OnOff == true && temperature > 14)
+            {
+                temperature--;
+                return true;
+            }
+            return false;
+        }
+
         public void IncreaseTemperature()
         {
-            if (OnOff == true && temperature < 29)
+            if (OnOff == true && temperature < 31)
                 temperature++;
         }
 
         public void DecreaseTemperature()
         {
-            if (OnOff == true && temperature > 15)
+            if (OnOff == true && temperature > 14)
                 temperature--;
         }
 
-        public void SetUpAirFlowPosition()
+        public bool SetUpAirFlowPositionBool()
         {
 
             if (OnOff == true && airFlowPosition >= 0 && airFlowPosition < 4)
+            {
                 airFlowPosition++;
+                return true;
+            }
+            else
+                return false;
+        }
+        public bool SetDownAirFlowPositionBool()
+        {
+            if (OnOff == true && airFlowPosition > 0 && airFlowPosition <= 4)
+            {
+                airFlowPosition--;
+                return true;
+            }
+            else return false;
+
+
+
         }
 
         public void SetDownAirFlowPosition()
         {
             if (OnOff == true && airFlowPosition > 0 && airFlowPosition <= 4)
+            {
                 airFlowPosition--;
+
+            }
+
+
         }
 
-        public void TurnOnOff()
+        public void SetUpAirFlowPosition()
+        {
+            if (OnOff == true && airFlowPosition >= 0 && airFlowPosition < 4)
+            {
+                airFlowPosition++;
+
+            }
+
+
+        }
+
+    
+
+    public void TurnOnOff()
         {
             if (OnOff == false)
             {

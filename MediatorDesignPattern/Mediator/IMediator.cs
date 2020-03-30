@@ -8,7 +8,7 @@ namespace MediatorDesignPattern.Mediator
 {
     public interface IMediator
     {
-        public void FlightOff(int i);
-       // public void Ground(int i);
+        public void TakeOff(int i);
+        public void Land(int i);
     }
 }

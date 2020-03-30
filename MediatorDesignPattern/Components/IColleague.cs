@@ -8,7 +8,7 @@ namespace MediatorDesignPattern.Components
     {
         public int GetId();
        
-        public void FlightOff();
-       // public void Ground();
+        public void TakeOff();
+        public void Land();
     }
 }

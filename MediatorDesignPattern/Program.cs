@@ -27,8 +27,8 @@ namespace MediatorDesignPattern
 
             Console.WriteLine(ctm.Getrack());
 
-            pc.FlightOff();
-            apc.FlightOff();
+            pc.TakeOff();
+            apc.TakeOff();
 
 
             Console.WriteLine(pc.GetFlightAltitude());
@@ -36,12 +36,19 @@ namespace MediatorDesignPattern
 
             Console.WriteLine(ctm.Getrack());
 
-            pc.Ground();
+            pc.Land();
             Console.WriteLine(pc.GetFlightAltitude());
 
-            hc.FlightOff();
+            hc.TakeOff();
             Console.WriteLine(hc.GetFlightAltitude());
             Console.WriteLine(ctm.Getrack());
+
+            ctm.ClearTrack();
+
+            hc.TakeOff();
+            Console.WriteLine(hc.GetFlightAltitude());
+            Console.WriteLine(ctm.Getrack());
+
 
 
         }

@@ -21,7 +21,7 @@ namespace CommandDesignPatern.Commands
             }
         }
 
-        public void unexecute()
+        public void undo()
         {
        
         }
