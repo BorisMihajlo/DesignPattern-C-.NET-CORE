@@ -8,47 +8,25 @@ namespace MediatorDesignPattern
     {
         static void Main(string[] args)
         {
-            ControlTowerMediator ctm = new ControlTowerMediator();
+            ControlTowerMediator controlTower = new ControlTowerMediator();
 
-            PlaneConcrete pc = new PlaneConcrete(ctm);
-            HelicopterConrete hc = new HelicopterConrete(ctm);
-            AirplaneConcrete apc = new AirplaneConcrete(ctm);
+            PlaneConcrete pc = new PlaneConcrete();
+            HelicopterConrete hc = new HelicopterConrete();
+            AirplaneConcrete apc = new AirplaneConcrete();
 
-            ctm.colleague.Add(pc);
-            ctm.colleague.Add(apc);
-            ctm.colleague.Add(hc);
+            controlTower.Register(pc);
+            controlTower.Register(hc);
+            controlTower.Register(apc);
 
+            controlTower.ClearTrack();
 
-            ctm.ClearTrack();
-
-            Console.WriteLine(pc.GetFlightAltitude());
-            Console.WriteLine(apc.GetFlightAltitude());
-            Console.WriteLine(hc.GetFlightAltitude());
-
-            Console.WriteLine(ctm.Getrack());
+            apc.TakeOff();
+            apc.Land();
 
             pc.TakeOff();
-            apc.TakeOff();
-
-
+    
             Console.WriteLine(pc.GetFlightAltitude());
-            Console.WriteLine(apc.GetFlightAltitude());
-
-            Console.WriteLine(ctm.Getrack());
-
-            pc.Land();
-            Console.WriteLine(pc.GetFlightAltitude());
-
-            hc.TakeOff();
-            Console.WriteLine(hc.GetFlightAltitude());
-            Console.WriteLine(ctm.Getrack());
-
-            ctm.ClearTrack();
-
-            hc.TakeOff();
-            Console.WriteLine(hc.GetFlightAltitude());
-            Console.WriteLine(ctm.Getrack());
-
+            Console.WriteLine(controlTower.Getrack());
         }
     }
 }

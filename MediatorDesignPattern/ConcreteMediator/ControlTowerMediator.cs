@@ -9,15 +9,18 @@ namespace MediatorDesignPattern.ConcreteMediator
     public class ControlTowerMediator : IMediator
     {
       
-        public static bool track;
-        public List<IColleague> colleague { get; set; }
+        private static bool track;
+        private List<IColleague> colleagues { get; set; }
 
+        public void Register(IColleague colleague)
+        {
+            colleagues.Add(colleague);
+        }
         
         public bool Getrack() { return track; }
         public ControlTowerMediator() 
         {
-            colleague = new List<IColleague>();
-        
+            colleagues = new List<IColleague>();
         }
       
         public void Ontrack()
@@ -27,12 +30,11 @@ namespace MediatorDesignPattern.ConcreteMediator
         public void ClearTrack()
         {
            track = true;
-            
         }
 
         public void TakeOff(int jmbg)
         {
-            foreach (var a in colleague)
+            foreach (var a in colleagues)
             { 
 
                 if (a.GetId() == jmbg)
@@ -43,12 +45,13 @@ namespace MediatorDesignPattern.ConcreteMediator
         }
         public void Land(int jmbg)
         {
-            foreach (var a in colleague)
+            foreach (var a in colleagues)
             {
                 if (a.GetId() == jmbg)
                 {
-                    Ontrack();
+                   Ontrack();
                 }
+             
             }
         }
         public void SendMessage()

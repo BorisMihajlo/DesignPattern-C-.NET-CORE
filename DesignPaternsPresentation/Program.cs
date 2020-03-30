@@ -34,7 +34,6 @@ namespace DesignPaternsPresentation
 
             };
 
-
             foreach (var command in commands)
             {
                 command.execute();

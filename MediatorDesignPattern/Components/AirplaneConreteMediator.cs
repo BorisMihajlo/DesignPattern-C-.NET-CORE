@@ -8,19 +8,26 @@ namespace MediatorDesignPattern.Components
 {
     public class AirplaneConcrete : IColleague
     {
-        public readonly int id;
-        public static float flight_altitude;
-        public ControlTowerMediator ctm;
+        private readonly int id;
+        private static float flight_altitude;
+        private ControlTowerMediator _ControlTower;
 
+      
         public int GetId()
         {
             return id;
         }
-        public AirplaneConcrete(ControlTowerMediator ctm)
+        public AirplaneConcrete()
         {
             Random r = new Random();
             id = r.Next(1, 100);
-            this.ctm = ctm;
+            _ControlTower = new ControlTowerMediator();
+            _ControlTower.Register(this);
+        }
+
+        public void Registrer()
+        {
+            this._ControlTower = new ControlTowerMediator();
         }
         public float GetFlightAltitude()
         {
@@ -29,27 +36,31 @@ namespace MediatorDesignPattern.Components
 
         public void TakeOff()
         {
-            if (ctm.Getrack() == true)
+            if (_ControlTower.Getrack() == true)
             {
-                ctm.TakeOff(this.id);
+                _ControlTower.TakeOff(this.id);
                 flight_altitude = 8000;
-                ctm.ClearTrack();
+                _ControlTower.ClearTrack();
             }
             else
-                ctm.SendMessage();
+            {
+                _ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
+            }
         }
 
         public void Land()
         {
-            if (ctm.Getrack() == true)
+            if (_ControlTower.Getrack() == true)
             {
-                ctm.Land(id);
+                _ControlTower.Land(id);
                 flight_altitude = 0;
             }
             else
-                ctm.SendMessage();
+            {
+                _ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
+            }
         }
     }
 }

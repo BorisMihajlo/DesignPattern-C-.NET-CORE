@@ -7,7 +7,7 @@ namespace CommandDesignPatern.Commands
 {
     class AirConditionerPositionUpCommand : ICommand
     {
-        public List<IReceiver> acr;
+        private List<IReceiver> acr;
         public AirConditionerPositionUpCommand(List<IReceiver> _acr)
         {
             this.acr = _acr;

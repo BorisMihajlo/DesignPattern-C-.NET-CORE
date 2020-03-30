@@ -6,9 +6,9 @@ namespace CommandDesignPatern.Receivers
 {
     public class AirConditionerReceiver : IReceiver
     {
-        public static bool OnOff=true; 
-        public static int temperature=20;
-        public static int airFlowPosition=2;
+        private static bool OnOff=true; 
+        private static int temperature=20;
+        private static int airFlowPosition=2;
         public AirConditionerReceiver() {  }
 
         public bool IncreaseTemperatureBool()
