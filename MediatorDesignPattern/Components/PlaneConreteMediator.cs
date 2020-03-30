@@ -6,53 +6,50 @@ using System.Text;
 
 namespace MediatorDesignPattern.Components
 {
-   public class PlaneConcrete : IColleague
+    public class PlaneConcrete : BaseColleague
     {
-        private readonly int id;
-         private static float flight_altitude;
-        private ControlTowerMediator ctm;
+        private readonly Guid id;
+        private static float flight_altitude;
+        
 
-        public int GetId()
+        public override Guid GetId()
         {
             return id;
         }
         public PlaneConcrete()
         {
-            Random r = new Random();
-            id = r.Next(1, 100);
-            this.ctm = new ControlTowerMediator();
-            ctm.Register(this);
+            id = Guid.NewGuid();
         }
         public float GetFlightAltitude()
         {
              return flight_altitude;
         }
-       
-        public void TakeOff()
+
+        public override void TakeOff()
         {
-            if (ctm.Getrack() == true)
+            if (ControlTower.GetIsTrackBusy() == true)
             {
-                ctm.TakeOff(this.id);
+                ControlTower.TakeOff(id);
                 flight_altitude = 4000;
-                ctm.ClearTrack();
+                ControlTower.ClearTrack();
             }
             else
             {
-                ctm.SendMessage();
+                ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
             }
         }
 
-        public void Land()
+        public override void Land()
         {
-            if (ctm.Getrack() == true)
+            if (ControlTower.GetIsTrackBusy() == true)
             {
-                ctm.Land(id);
+                ControlTower.Land(id);
                 flight_altitude = 0;
             }
             else
             {
-                ctm.SendMessage();
+                ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
             }
         }

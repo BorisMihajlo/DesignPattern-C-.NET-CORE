@@ -6,59 +6,52 @@ using System.Text;
 
 namespace MediatorDesignPattern.Components
 {
-    public class AirplaneConcrete : IColleague
+    public class AirplaneConcrete : BaseColleague
     {
-        private readonly int id;
+        private readonly Guid id;
         private static float flight_altitude;
-        private ControlTowerMediator _ControlTower;
+        
 
-      
-        public int GetId()
+
+        public override Guid GetId()
         {
             return id;
         }
-        public AirplaneConcrete()
+        public AirplaneConcrete()  
         {
-            Random r = new Random();
-            id = r.Next(1, 100);
-            _ControlTower = new ControlTowerMediator();
-            _ControlTower.Register(this);
+            id = Guid.NewGuid();      
         }
 
-        public void Registrer()
-        {
-            this._ControlTower = new ControlTowerMediator();
-        }
         public float GetFlightAltitude()
         {
             return flight_altitude;
         }
 
-        public void TakeOff()
+        public override void TakeOff()
         {
-            if (_ControlTower.Getrack() == true)
+            if (ControlTower.GetIsTrackBusy() == true)
             {
-                _ControlTower.TakeOff(this.id);
+                ControlTower.TakeOff(this.id);
                 flight_altitude = 8000;
-                _ControlTower.ClearTrack();
+                ControlTower.ClearTrack();
             }
             else
             {
-                _ControlTower.SendMessage();
+                ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
             }
         }
 
-        public void Land()
+        public override void Land()
         {
-            if (_ControlTower.Getrack() == true)
+            if (ControlTower.GetIsTrackBusy() == true)
             {
-                _ControlTower.Land(id);
+                ControlTower.Land(id);
                 flight_altitude = 0;
             }
             else
             {
-                _ControlTower.SendMessage();
+                ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
             }
         }

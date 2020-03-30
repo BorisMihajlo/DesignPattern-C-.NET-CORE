@@ -1,13 +1,17 @@
-﻿using System;
+﻿using MediatorDesignPattern.ConcreteMediator;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MediatorDesignPattern.Components
 {
-   public interface IColleague
+   public abstract class BaseColleague
     {
-        public int GetId();
-        public void TakeOff();
-        public void Land();
+        public abstract Guid GetId();
+        public abstract void TakeOff();
+        public abstract void Land();
+
+        public ControlTowerMediator ControlTower;
+
     }
 }

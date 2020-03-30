@@ -20,13 +20,20 @@ namespace MediatorDesignPattern
 
             controlTower.ClearTrack();
 
+            hc.TakeOff();
+            Console.WriteLine(hc.GetFlightAltitude());
+
             apc.TakeOff();
-            apc.Land();
+            Console.WriteLine(apc.GetFlightAltitude());
+
+            hc.Land();
+            Console.WriteLine(hc.GetFlightAltitude());
+            Console.WriteLine(controlTower.GetIsTrackBusy());
 
             pc.TakeOff();
-    
+
             Console.WriteLine(pc.GetFlightAltitude());
-            Console.WriteLine(controlTower.Getrack());
+            
         }
     }
 }

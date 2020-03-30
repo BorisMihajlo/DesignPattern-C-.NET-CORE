@@ -6,59 +6,52 @@ using System.Text;
 
 namespace MediatorDesignPattern.Components
 {
-    public class HelicopterConrete : IColleague
+    public class HelicopterConrete : BaseColleague
     {
-        private readonly int id;
+        private readonly Guid id;
         private static float flight_altitude;
-        private ControlTowerMediator ctm;
+       
 
-        public int GetId()
+        public override Guid GetId()
         {
             return id;
         }
         public HelicopterConrete()
         {
-            Random r = new Random();
-            id = r.Next(1, 100);
-            ctm = new ControlTowerMediator();
-            ctm.Register(this);
-
+            id = Guid.NewGuid();
+            
         }
-        //public void Registar()
-        //{
-        //    ctm = new  ControlTowerMediator();
-        //    ctm.Register(this);
-        //}
+      
         public float GetFlightAltitude()
         {
             return flight_altitude;
         }
 
-        public void TakeOff()
+        public override void TakeOff()
         {
-            if (ctm.Getrack() == true)
+            if (ControlTower.GetIsTrackBusy() == true)
             {
-                ctm.TakeOff(this.id);
+                ControlTower.TakeOff(this.id);
                 flight_altitude = 4000;
-                ctm.ClearTrack();
+                ControlTower.ClearTrack();
             }
             else
             {
-                ctm.SendMessage();
+                ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
             }
         }
 
-        public void Land()
+        public override void Land()
         {
-            if (ctm.Getrack() == true)
+            if (ControlTower.GetIsTrackBusy() == true)
             {
-                ctm.Land(id);
+                ControlTower.Land(id);
                 flight_altitude = 0;
             }
             else
             {
-                ctm.SendMessage();
+                ControlTower.SendMessage();
                 flight_altitude = flight_altitude;
             }
         }
