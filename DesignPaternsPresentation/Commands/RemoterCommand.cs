@@ -56,22 +56,22 @@ namespace CommandDesignPatern.Invokers
                 {
                     case Action.TempDown:
                         if (IsSuccess)
-                            acr.IncreaseTemperature();
+                            acr.IncreaseTemperatureBool();
                         break;
 
                     case Action.TempUp:
                         if (IsSuccess)
-                            acr.DecreaseTemperature();
+                            acr.DecreaseTemperatureBool();
                         break;
 
                     case Action.PositionDown:
                         if (IsSuccess==true)
-                            acr.SetUpAirFlowPosition();
+                            acr.SetUpAirFlowPositionBool();
                         break;
 
                     case Action.PositionUp:
                         if (IsSuccess==true)
-                        acr.SetDownAirFlowPosition();
+                        acr.SetDownAirFlowPositionBool();
                         break;
                 }
             }

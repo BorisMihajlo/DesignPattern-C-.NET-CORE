@@ -30,7 +30,7 @@ namespace DesignPaternsPresentation
                 new RemoterCommand(receivers, RemoterCommand.Action.PositionUp),
                 new RemoterCommand(receivers, RemoterCommand.Action.PositionUp),
                 new RemoterCommand(receivers, RemoterCommand.Action.PositionUp),
-                 new RemoterCommand(receivers, RemoterCommand.Action.PositionDown),
+                new RemoterCommand(receivers, RemoterCommand.Action.PositionDown),
 
             };
 

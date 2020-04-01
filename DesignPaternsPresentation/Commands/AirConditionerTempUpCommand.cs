@@ -16,7 +16,7 @@ namespace CommandDesignPatern.Commands
         {
             foreach (var a in acr)
             {
-                a.IncreaseTemperature();
+                a.IncreaseTemperatureBool();
             }
         }
 

@@ -32,18 +32,6 @@ namespace CommandDesignPatern.Receivers
             return false;
         }
 
-        public void IncreaseTemperature()
-        {
-            if (OnOff == true && temperature < 31)
-                temperature++;
-        }
-
-        public void DecreaseTemperature()
-        {
-            if (OnOff == true && temperature > 14)
-                temperature--;
-        }
-
         public bool SetUpAirFlowPositionBool()
         {
 
@@ -57,7 +45,7 @@ namespace CommandDesignPatern.Receivers
         }
         public bool SetDownAirFlowPositionBool()
         {
-            if (OnOff == true && airFlowPosition >0 && airFlowPosition <= 4)
+            if (OnOff == true && airFlowPosition > 0 && airFlowPosition <= 4)
             {
                 airFlowPosition--;
                 return true;
@@ -65,22 +53,7 @@ namespace CommandDesignPatern.Receivers
             else return false;
         }
 
-        public void SetDownAirFlowPosition()
-        {
-            if (OnOff == true && airFlowPosition > 0 && airFlowPosition <= 4)
-            {
-                airFlowPosition--;   
-            }
-        }
-
-        public void SetUpAirFlowPosition()
-        {
-            if (OnOff == true && airFlowPosition >= 0 && airFlowPosition < 4)
-            {
-                airFlowPosition++;
-            }
-        }
-
+        
         public void TurnOnOff()
         {
             if (OnOff == false)
