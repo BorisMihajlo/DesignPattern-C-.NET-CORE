@@ -5,6 +5,7 @@ using System.Text;
 
 namespace CommandDesignPatern.Commands
 {
+    //Vezba za GIT 
     public class AirConditionerOnCommand : ICommand
     {
         private List<IReceiver> acr;
