@@ -10,7 +10,7 @@ namespace MediatorDesignPattern
         static void Main(string[] args)
         {
             ControlTowerMediator controlTower = new ControlTowerMediator();
-
+            ControlTowerMediator controlTower1 = new ControlTowerMediator();
             PlaneConcrete pc = new PlaneConcrete();
             HelicopterConrete hc = new HelicopterConrete();
             AirplaneConcrete apc = new AirplaneConcrete();
