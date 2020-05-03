@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\DesignPaternsPresentation\\CommandDesignPatern.csproj": {}
+    "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\DesignPaternsPresentation\\CommandDesignPatern.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\DesignPaternsPresentation\\CommandDesignPatern.csproj": {
+    "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\DesignPaternsPresentation\\CommandDesignPatern.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\DesignPaternsPresentation\\CommandDesignPatern.csproj",
+        "projectUniqueName": "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\DesignPaternsPresentation\\CommandDesignPatern.csproj",
         "projectName": "CommandDesignPatern",
-        "projectPath": "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\DesignPaternsPresentation\\CommandDesignPatern.csproj",
+        "projectPath": "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\DesignPaternsPresentation\\CommandDesignPatern.csproj",
         "packagesPath": "C:\\Users\\bomi2006\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\DesignPaternsPresentation\\obj\\",
+        "outputPath": "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\DesignPaternsPresentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bomi2006\\AppData\\Roaming\\NuGet\\NuGet.Config",

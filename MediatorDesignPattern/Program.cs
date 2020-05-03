@@ -6,6 +6,7 @@ namespace MediatorDesignPattern
 {
     class Program
     {
+        //Promena za prvu granu
         static void Main(string[] args)
         {
             ControlTowerMediator controlTower = new ControlTowerMediator();

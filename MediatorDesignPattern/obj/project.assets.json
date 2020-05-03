@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\MediatorDesignPattern\\MediatorDesignPattern.csproj",
+      "projectUniqueName": "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\MediatorDesignPattern\\MediatorDesignPattern.csproj",
       "projectName": "MediatorDesignPattern",
-      "projectPath": "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\MediatorDesignPattern\\MediatorDesignPattern.csproj",
+      "projectPath": "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\MediatorDesignPattern\\MediatorDesignPattern.csproj",
       "packagesPath": "C:\\Users\\bomi2006\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bomi2006\\source\\repos\\DesignPaternsPresentation\\MediatorDesignPattern\\obj\\",
+      "outputPath": "C:\\Users\\bomi2006\\Desktop\\Command&MediatorPattern\\DesignPattern-C-.NET-CORE\\MediatorDesignPattern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bomi2006\\AppData\\Roaming\\NuGet\\NuGet.Config",
